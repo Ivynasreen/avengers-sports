@@ -24,20 +24,20 @@ const LeagueDetail = () => {
     }, [idLeague])
     return (
         <div className = "header">
-            <img src= {league.strBanner}/>
-            <img style = {{height:'150px' , width: '400px'}}className = "logo" src = {league.strLogo} />
+            <img src= {league.strBanner} alt = ""/>
+            <img style = {{height:'150px' , width: '400px'}}className = "logo" src = {league.strLogo} alt = ""/>
             <div className = "league-info">
                 <div className="container">
                     <div className = "league-details ">
                         <h4> {league.strLeague}</h4>
-                        <p><img style =  {{width: '30px', height: '30px',margin: 'auto'  }} src = {founded} /> <span style = {{marginLeft: '5px'}}>Founded : {league.intFormedYear}</span></p>
-                        <p><img style =  {{width: '30px', height: '30px', margin: 'auto' }} src = {flag} /> <span style = {{marginLeft: '5px'}}>Country : {league.strCountry}</span></p>
-                        <p><img style =  {{width: '30px', height: '30px' ,margin: 'auto'  }} src = {sports} /> <span style = {{marginLeft: '5px'}}>Sport type : {league.strSport}</span></p>
-                        <p><img style =  {{width: '30px', height: '30px', margin: 'auto' }} src = {gender} /> <span style = {{marginLeft: '5px'}}>Gender : {league.strGender}</span></p>
+                        <p><img style =  {{width: '30px', height: '30px',margin: 'auto'  }} src = {founded} alt = ""/> <span style = {{marginLeft: '5px'}}>Founded : {league.intFormedYear}</span></p>
+                        <p><img style =  {{width: '30px', height: '30px', margin: 'auto' }} src = {flag} alt = ""/> <span style = {{marginLeft: '5px'}}>Country : {league.strCountry}</span></p>
+                        <p><img style =  {{width: '30px', height: '30px' ,margin: 'auto'  }} src = {sports} alt = ""/> <span style = {{marginLeft: '5px'}}>Sport type : {league.strSport}</span></p>
+                        <p><img style =  {{width: '30px', height: '30px', margin: 'auto' }} src = {gender} alt = ""/> <span style = {{marginLeft: '5px'}}>Gender : {league.strGender}</span></p>
                     </div>
                     <div className = "league-image">
                         {league.strGender && (
-                        league.strGender === 'Male' ? <img src= {maleImage} /> : <img src = {femaleImage} />
+                        league.strGender === 'Male' ? <img src= {maleImage} alt = "" /> : <img src = {femaleImage} alt = ""/>
                         )}
                     </div>
                 </div>

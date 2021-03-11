@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NotFound from './Components/NotFound/NotFound';
 import LeagueDetail from './Components/LeagueDetail/LeagueDetail';
