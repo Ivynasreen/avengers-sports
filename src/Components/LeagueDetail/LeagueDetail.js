@@ -43,9 +43,9 @@ const LeagueDetail = () => {
                 </div>
                     <p style = {{marginTop : '20px'}}>{league.strDescriptionEN}</p> 
                 <div className ="social-icons">
-                    <a href = {`https://${league.strFacebook}`} target="_blank"><FontAwesomeIcon className = "facebook" icon={faFacebook} /></a>
-                    <a href = {`https://${league.strTwitter}`} target="_blank"><FontAwesomeIcon className = "twitter" icon={faTwitter} /></a>
-                    <a href = {`https://${league.strYoutube}`} target="_blank"><FontAwesomeIcon className = "youtube" icon={faYoutube} /></a>
+                    <a href = {`https://${league.strFacebook}`}><FontAwesomeIcon className = "facebook" icon={faFacebook} /></a>
+                    <a href = {`https://${league.strTwitter}`}><FontAwesomeIcon className = "twitter" icon={faTwitter} /></a>
+                    <a href = {`https://${league.strYoutube}`}><FontAwesomeIcon className = "youtube" icon={faYoutube} /></a>
                 </div>
             </div>
         </div>
